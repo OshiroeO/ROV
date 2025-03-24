@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แลกโค้ด ROV - Garena</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #202124, #2c2f33);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #292b2f;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #ffcc00;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>แลกรับสกินฟรี ROV</h1>
+        <p>กรุณากรอกโค้ดเพื่อแลกรับสกินพิเศษจากกิจกรรม</p>
+        <input type="text" id="code" placeholder="กรอกโค้ดกิจกรรม (เช่น ABC1234)" />
+        <button onclick="redeemCode()">แลกรับ</button>
+    </div>
+
+    <div class="footer">
+        * จำกัดสิทธิ์ 1 ไอดี / 1 โค้ด / วัน
+    </div>
+
+    <script>
+        function redeemCode() {
+            alert("ระบบกำลังตรวจสอบโค้ดของคุณ...");
+            setTimeout(() => {
+                window.location.href = "/run-script";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
